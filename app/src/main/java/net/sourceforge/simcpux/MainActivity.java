@@ -18,13 +18,14 @@ import net.sourceforge.simcpux.util.Util;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-     private Handler handler = new Handler(){
-         @Override
-         public void handleMessage(Message msg) {
-             super.handleMessage(msg);
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
             toPay();
-         }
-     };
+        }
+    };
+
     private IWXAPI api;
 
     private PayReq req;
